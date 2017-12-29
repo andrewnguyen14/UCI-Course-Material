@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gandalf The Grey Objects</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var spongebob = {
+      "name" : "Spongebob Squarepants",
+      "location" : "Bikini Bottom",
+      "neighbors" : [
+        "Patrick",
+        "Squidward"
+      ],
+      "employer" : "Krusty Krab",
+      "pet" : "Gary the snail",
+      "age" : 50,
+      "hobbies" : [
+        "JELLYFISHING",
+        "Bubble Blowing",
+        "Bothering Squidward"
+      ]
+    }
+
+    // Object properties can be accessed with "bracket notation"
+    alert("My name is " + spongebob.name);
+
+    // Or with "dot notation" if the property has no spaces
+    if (spongebob.age > 30) {
+      console.log('OH MY GOD SPONGEBOB IS OLD.');
+    }
+
+    var neighborLength = spongebob.neighbors.length;//spongebob["neighbors"].length;
+    for(var i = 0; i < neighborLength; i++) {
+      console.log('Spongebob lives next to ' + spongebob["neighbors"][i])//spongebob.neighbors[i]
+    }
+
+  </script>
+</body>
+
+</html>

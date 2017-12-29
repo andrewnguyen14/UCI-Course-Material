@@ -1,0 +1,38 @@
+/* Example tag selectors */
+header {
+  background-color: #329f32;
+  color: #c3f9c3;
+}
+body {
+  background-color: #8db38d;
+}
+/* Example class selector */
+.group-container {
+  background-color: #8db38d;
+  color: #f0fcf0;
+}
+
+.individual-container  {
+  background-color: #baefba;
+  color: #215e21;
+}
+.individual-container a {
+  color: #215e21;
+}
+
+/* Example even selectors */
+/* Note - for even styling I used default listed above
+    but I also could have used nth-child(even)
+   Also note - the first element is treated as 0 and
+    is therefore even, not odd. */
+.group-container:nth-child(odd) {
+  background-color: #4f7d4f;
+  color: #e4fde4;
+}
+.individual-container:nth-child(odd) {
+  background-color: #d8ead8;
+  color: #4a7b4a;
+}
+.individual-container:nth-child(odd) a {
+  color: #4a7b4a;
+}

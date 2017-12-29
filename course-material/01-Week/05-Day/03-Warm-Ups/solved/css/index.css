@@ -1,0 +1,86 @@
+/* Clear all default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Example tag selectors */
+header {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 20px;
+  background-color: #5c9cd4;
+  color: aliceblue;
+}
+body {
+  background-color: #5b758c;
+}
+div, header {
+  display: block; /* not needed, but I put it here anyways*/
+}
+a:before {
+  content: '> ';
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+/* Example class selector */
+.group-container {
+  background-color: #5b758c;
+  color: #dce2e8;
+  padding: 20px;
+}
+
+.individual-container  {
+  background-color:aliceblue;
+  border-radius: 15px;
+  padding:15px;
+  margin-bottom: 10px;
+  color: #5b758c;
+}
+.individual-container a {
+  color: #5b758c;
+  display: block;
+}
+
+.group-header {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.individual-header {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 7px;
+}
+
+/* Example even selectors */
+/* Note - for even styling I used default listed above
+    but I also could have used nth-child(even)
+   Also note - the first element is treated as 0 and
+    is therefore even, not odd. */
+.group-container:nth-child(odd) {
+  background-color: #7d94a9;
+  color: aliceblue;
+}
+.individual-container:nth-child(odd) {
+  background-color: #d1e4f5;
+  color: #47657f;
+}
+.individual-container:nth-child(odd) a {
+  color: #47657f;
+}
